@@ -1,0 +1,91 @@
+{
+  "schema_version": "1.0",
+  "repository": "dcgavazzi/O-slide-assets",
+  "default_branch": "main",
+  "retrieval_policy": {
+    "read_this_manifest_first": true,
+    "do_not_scan_repository_recursively": true,
+    "select_only_needed_assets": true,
+    "typical_max_downloads_per_deck": 8,
+    "fallback_behavior": "If a listed asset cannot be retrieved, use another listed fallback from the same category. Do not enumerate the entire repo unless the user explicitly asks."
+  },
+  "brand_core": {
+    "logo_primary_blue": {
+      "path": "oxiologoblue.png",
+      "usage": "Primary OXIO logo for cover and closing slides; keep small and top-left when used."
+    },
+    "slide_background": {
+      "path": "oxioslidebackground.png",
+      "usage": "Approved OXIO slide background/composite treatment. Use as a true slide background when the selected layout calls for it."
+    },
+    "icons_sheet": {
+      "path": "oxioicons.png",
+      "usage": "Approved OXIO icon source. Crop or reuse icons consistently when an OXIO layout expects iconography."
+    }
+  },
+  "image_categories": {
+    "mobile_and_consumer": [
+      "Stock images/Closeup woman using phone.jpg",
+      "Stock images/Phone closeup.jpeg",
+      "Stock images/Phone closeup Sunset.jpeg",
+      "Stock images/closeup to phone horizontal.jpeg",
+      "Stock images/Man checking phone.jpeg",
+      "Stock images/Many people holding phones.jpeg",
+      "Stock images/People lined up with phones.jpeg",
+      "Stock images/happy-man-texting-on-mobile-phone-2022-09-30-16-45-29-utc.jpg",
+      "Stock images/woman using phone at night.jpg"
+    ],
+    "payments_and_commerce": [
+      "Stock images/contactless payment with phone.jpg",
+      "Stock images/contactless payment terminal .jpg",
+      "Stock images/Young woman paying for coffee with phone.jpg",
+      "Stock images/Young woman paying with mobile phone in machine.jpg",
+      "Stock images/close-up-customer-paying-by-credit-card.jpg",
+      "Stock images/female barista using terminal for contactless payment.jpg",
+      "Stock images/Man paying with card and watching phone.jpg",
+      "Stock images/Woman holding card and phone.jpg",
+      "Stock images/Woman making a payment on her laptop.jpeg",
+      "Stock images/paying for coffee with phone.jpg"
+    ],
+    "enterprise_and_operations": [
+      "Stock images/engineer- Enterprise use case.jpg",
+      "Stock images/it-engineer-work.jpg",
+      "Stock images/designers-casual-clothes-is-using-laptop.jpg",
+      "Stock images/Man in suit sitting.jpg",
+      "Stock images/Man on a call.jpg"
+    ],
+    "transportation_and_logistics": [
+      "Stock images/Cargo Truck - transportation use case.jpg",
+      "Stock images/Delivery man.jpg",
+      "Stock images/Tourist at public transport station.jpg"
+    ],
+    "lifestyle_and_travel": [
+      "Stock images/Woman checking phone in coffee shop.jpeg",
+      "Stock images/Woman checking phone wood wall.jpeg",
+      "Stock images/Woman in hammock.jpeg",
+      "Stock images/Woman on a phone call.jpg",
+      "Stock images/woman taking a selfie with kid.jpeg",
+      "Stock images/Teen with phone on horse 1.jpeg",
+      "Stock images/Teen with phone on horse 2.jpeg"
+    ],
+    "additional_recent_uploads": [
+      "Stock images/mitchell-luo--qKoZ_Ezcio-unsplash.jpg",
+      "Stock images/polox-hernandez-lRpTgmEsuXc-unsplash.jpg",
+      "Stock images/roberto-carlos-roman-don-_HvHRqR0hvA-unsplash.jpg",
+      "Stock images/shutterstock_1942118800.jpg",
+      "Stock images/shutterstock_2248732177.jpg",
+      "Stock images/thiago-patriota-FpdoHOjzaOM-unsplash.jpg",
+      "Stock images/tim-mossholder-gTOHbjMDNUw-unsplash.jpg",
+      "Stock images/yaoyu-chen-JSENNXzTfCw-unsplash.jpg"
+    ]
+  },
+  "selection_guidance": {
+    "cover": ["brand_core.slide_background", "brand_core.logo_primary_blue"],
+    "closing": ["brand_core.slide_background", "brand_core.logo_primary_blue"],
+    "payments": ["image_categories.payments_and_commerce"],
+    "retail": ["image_categories.payments_and_commerce", "image_categories.mobile_and_consumer"],
+    "enterprise": ["image_categories.enterprise_and_operations"],
+    "logistics": ["image_categories.transportation_and_logistics"],
+    "consumer_mobile": ["image_categories.mobile_and_consumer", "image_categories.lifestyle_and_travel"]
+  }
+}
